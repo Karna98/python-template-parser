@@ -10,9 +10,9 @@
     Output File     : output.docx
 
     Command : python main.py {Input_File} {Input_Template} {Output_File}
-            # python SourceCode/main.py -df='example/sample.json' -tf='example/template.docx' -of='example/output.docx'
-            # python SourceCode/main.py -df='example/sample.json' -tf='example/template.docx' -of='example/output.docx' -ll='DEBUG'
-            # python SourceCode/main.py -h
+            # python src/main.py -df='example/sample.json' -tf='example/template.docx' -of='example/output.docx'
+            # python src/main.py -df='example/sample.json' -tf='example/template.docx' -of='example/output.docx' -ll='DEBUG'
+            # python src/main.py -h
 """
 
 import argparse
