@@ -4,9 +4,6 @@
 # @Version :  1.0.0
 # @Description : Setup script for python-template-parser
 
-# Dependent Package to be installed
-DEPENDENT_PACKAGES=("pyyaml" "python-docx" "docxtpl")
-
 # Supported OS List
 OS_LIST=("Linux" "Mac" "Cygwin" "Windows")
 
@@ -182,8 +179,8 @@ stage_2() {
     fi
 
     # 2.2 Install Dependencies
-    printf -- "\n2. Installing required dependencies (%s) \n" "${DEPENDENT_PACKAGES[*]}"
-    pip3 install ${DEPENDENT_PACKAGES[*]}
+    printf -- "\n2. Installing required dependencies \n"
+    pip3 install -r requirements.txt
     printf -- "\nSuccessfully installed required dependencies\n"
 }
 
